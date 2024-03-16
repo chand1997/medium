@@ -30,10 +30,9 @@ export const Signin = () => {
 
   return (
     <>
-    
       <div className="flex flex-col w-full md:flex-row">
-        <div className=" w-full md:w-1/2 flex flex-col justify-center items-center h-screen bg-slate-300 ">
-          <div className=" flex flex-col  justify-center  items-center p-6 max-w-sm mx-auto   bg-slate-200 rounded-xl drop-shadow-lg">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center h-screen bg-slate-300">
+          <div className="flex flex-col justify-center items-center p-6 max-w-sm mx-auto bg-slate-200 rounded-xl drop-shadow-lg">
             <TopText page={"signin"} />
             <SingleInput
               onChange={(e) => {
@@ -47,7 +46,6 @@ export const Signin = () => {
               }
               view={"0 0 40 40"}
             />
-           
             <SingleInput
               onChange={(e) => {
                 setLoginInputs({ ...loginInputs, password: e.target.value });
@@ -63,10 +61,10 @@ export const Signin = () => {
             <Button onClick={sendRequest} label={"Sign in"} />
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center h-screen bg-slate-400 p-10  ">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center h-screen bg-slate-400 p-10">
           <Quote />
         </div>
       </div>
-      </>
+    </>
   );
 };
